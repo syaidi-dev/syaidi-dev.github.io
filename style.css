@@ -14,7 +14,7 @@ html {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 400px;
+	width: 600px;
 }
 .calculator-screen {
 	width: 100%;
@@ -58,7 +58,7 @@ button:hover{
 	border-color: #337cac;
 	color: #fff;
 	height: 100%;
-	grid-area: 2 / 4 / 6 / 5;
+	grid-area: 3 / 4 / 7 / 5;
 }
 .equal-sign:hover {
 	background-color: #4e9ed4;

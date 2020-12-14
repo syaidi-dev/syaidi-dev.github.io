@@ -62,6 +62,18 @@ function updateDisplay(){
 	const display = document.querySelector('.calculator-screen');
 	display.value = calculator.displayValue;
 }
+function fpangkat(){
+	calculator.displayValue = Math.pow(calculator.displayValue,2);
+}
+function fsin(){
+	calculator.displayValue = Math.sin(calculator.displayValue);
+}
+function fcos(){
+	calculator.displayValue = Math.cos(calculator.displayValue);
+}
+function ftan(){
+	calculator.displayValue = Math.tan(calculator.displayValue);
+}
 updateDisplay();
 const keys = document.querySelector('.calculator-keys');
 keys.addEventListener('click', event => {
@@ -76,6 +88,8 @@ keys.addEventListener('click', event => {
 		case '*':
 		case '/':
 		case '=':
+		case 'sin':
+		case 'cos':
 		handleOperator(value);
 		break;
 		case '.':
